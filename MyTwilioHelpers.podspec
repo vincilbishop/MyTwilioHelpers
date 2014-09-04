@@ -14,12 +14,7 @@ Pod::Spec.new do |spec|
 	spec.resource = 'MyTwilioHelpers.podspec'
     
 	spec.source_files = 'MyTwilioHelpers/*.{h,m}'
-    spec.prefix_header_contents = '#import "Lumberjack-Default-Log-Level.h""'
-   
-	spec.subspec "Twilio" do |twilio|
-        twilio.source_files = 'MyTwilioHelpers/*.{h,m}'
-        twilio.prefix_header_contents = '#import "TwilioClient.h"'
-        twilio.ios.dependency 'MyiOSHelpers/Logic/ThirdPartyHelpers/CocoaLumberjack', '~1.0'
-        twilio.dependency 'TwilioSDK', '~>1.1.4'
-    end
+    spec.prefix_header_contents = '#import "TwilioClient.h"','#import "Lumberjack-Default-Log-Level.h"'
+    spec.ios.dependency 'MyiOSHelpers/Logic/ThirdPartyHelpers/CocoaLumberjack', '~>1.0.0'
+    spec.dependency 'TwilioSDK', '~>1.1.4'
 end
