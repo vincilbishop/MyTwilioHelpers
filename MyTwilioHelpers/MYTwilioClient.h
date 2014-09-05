@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "TwilioClient.h"
 
 #define MYTwilioClient_deviceDidStartListeningForIncomingConnections @"MYTwilioClient_deviceDidStartListeningForIncomingConnections"
 #define MYTwilioClient_deviceDidStopListeningForIncomingConnections @"MYTwilioClient_deviceDidStopListeningForIncomingConnections"
